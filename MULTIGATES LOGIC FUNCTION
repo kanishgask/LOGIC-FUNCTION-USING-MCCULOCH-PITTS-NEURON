@@ -1,0 +1,28 @@
+def step_function(x):
+    return 1 if x >= 0 else 0
+
+def mcculloch_pitts_neuron(inputs, weights, bias, threshold=0):
+    weighted_sum = sum(i*w for i, w in zip(inputs, weights)) + bias
+    output = step_function(weighted_sum - threshold)
+    return output
+
+# Define weights and biases for different gates
+logic_gates = {
+    "AND":  {"weights": [1, 1],    "bias": -1.5},
+    "OR":   {"weights": [1, 1],    "bias": -0.5},
+    "NAND": {"weights": [-1, -1],  "bias": 1.5},
+    "NOR":  {"weights": [-1, -1],  "bias": 0.5}
+}
+
+input_combinations = [
+    (0, 0),
+    (0, 1),
+    (1, 0),
+    (1, 1),
+]
+
+for gate_name, params in logic_gates.items():
+    print(f"\n{gate_name} gate outputs:")
+    for inputs in input_combinations:
+        output = mcculloch_pitts_neuron(inputs, params["weights"], params["bias"])
+        print(f"Input: {inputs} -> Output: {output}")
