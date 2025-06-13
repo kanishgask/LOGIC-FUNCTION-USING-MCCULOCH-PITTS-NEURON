@@ -16,5 +16,8 @@ Python 3.x
 
 **Usage**
 Run the Python script to see the outputs of AND, OR, NAND, and NOR gates simulated by the McCulloch-Pitts neuron.
+
+
 **OUTPUT**
-![image](https://github.com/user-attachments/assets/3f6de757-5b5e-4e4c-bf84-bd0df81596a0)
+![image](https://github.com/user-attachments/assets/eb18f9d6-e16f-41d1-a505-9d68b2783667)
+
