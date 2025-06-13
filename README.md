@@ -19,5 +19,7 @@ Run the Python script to see the outputs of AND, OR, NAND, and NOR gates simulat
 
 
 **OUTPUT**
+
+
 ![image](https://github.com/user-attachments/assets/eb18f9d6-e16f-41d1-a505-9d68b2783667)
 
